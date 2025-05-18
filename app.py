@@ -8,7 +8,9 @@ def index():
 @app.route('/cart')
 def cart():
     return render_template("cart.html")
-
+@app.route('/o_nas')
+def o_nas():
+    return render_template("o_nas.html")
 
 
 app.run()
