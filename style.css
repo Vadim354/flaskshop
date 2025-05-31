@@ -19,7 +19,7 @@ nav {
     align-items: center;
     justify-content: space-between;    
 }
-.native {
+.native, .programmed {
     display: flex;
     width: 1000px;
     margin: 0 auto;
