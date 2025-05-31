@@ -16,7 +16,7 @@
     </nav>
   </header>
   <main>
-    <section class="native">
+<!--     <section class="native">
       <article>
         <img class="image" src="" alt="">
         <p class="name">Шарики</p>
@@ -32,8 +32,17 @@
         <p class="name"></p>
         <p class="price"></p>
       </article>
+    </section> -->
+    <section class="programmed">
+      {%for id, product in products.items() %}
+      <article>
+        <img cliss='image' src="{{ product.image }}" alt="{{ product.name }}" width="150px">
+        <p class="name">{{ product.name }}</p>
+        <p class="price">{{ product.price }}</p>
+        <a href="/add_to_cart/{{ id }}" class="cart-btn">В корзину</a>
+      </article>
+      {% endfor %}
     </section>
-    <section class="programmed"></section>
   </main>
   <footer>
     <p class="tel">88639879585</p>
