@@ -25,7 +25,7 @@ nav {
     margin: 0 auto;
     height: 350px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 45px;
 }
 article {
