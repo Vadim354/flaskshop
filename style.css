@@ -10,6 +10,7 @@ header {
     height: 150px;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 nav {
     display: flex;
@@ -25,9 +26,21 @@ nav {
     height: 350px;
     align-items: center;
     justify-content: space-between;
+    gap: 45px;
 }
 article {
     height: 300px;
     width: 150px;
     border: 3px solid;
+}
+nav a{
+    text_decoraition:none;
+    color: black;
+    display: block;
+    padding: 10px;
+    background-color: lightgray;
+}
+nav a:hover{
+    transform: scale(1.5);
+    transition: 1s;
 }
