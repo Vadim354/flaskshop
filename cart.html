@@ -14,4 +14,34 @@
     <a href="#/o_nas">О нас</a>
     </nav>
   </header>
+  <main class="cart-container">
+    {% if cart_items %}
+    <table>
+      <thead>
+        <tr>
+          <th>Товар</th>
+          <th>Цена</th>
+          <th>Количество</th>
+          <th>Сумма</th>
+          <th>Действия</thЮ
+        </tr>
+      </thead>
+    </table>
+    <tbody>
+    {% for item in cart_items %}
+    <tr>
+      <td>
+        <img src="{{ item.image }}" alt"{{ item.name }}" width="50">
+        {{ item.name }}
+      </td>
+      <td>{{ item.price }}</td>
+      <td>{{ item.quantity }}</td>
+      <td>{{ item.total }}</td>
+      <td>
+        <a href="/remove_from_cart/{{ item.id }}">Удалить</a>
+      </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    
 </body>
