@@ -1,4 +1,4 @@
-<html></html>
+<html>
 <head>
 <link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
@@ -26,7 +26,7 @@
           <th>Действия</thЮ
         </tr>
       </thead>
-    </table>
+    
     <tbody>
     {% for item in cart_items %}
     <tr>
@@ -43,5 +43,16 @@
     </tr>
     {% endfor %}
     </tbody>
+    <tfoot>
+      <tr>
+        <td colsplan="3">Итого:</td>
+        <td colsplan="2">{{ total_prise }} р</td>
+      </tr>
+    </tfoot>
+  </table>
+  {% else %}
+  <p>Ваша корзина пуста</p>
+  {% endif %}
     
 </body>
+</html>
